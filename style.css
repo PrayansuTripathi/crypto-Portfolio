@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Poppins"; */
+}
+body {
+  font-family: pxoppins;
+  background-color: #041334;
+  color: white;
+}
+p {
+  font-size: 16px;
+}
+
+.nav {
+  background-color: #0a1939;
+  padding: 13px 88px 13.7px 87px;
+}
+.nav-container,
+.nav-container div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+.nav-container li {
+  list-style: none;
+}
+.logo {
+  width: 285px;
+  height: 33.63px;
+}
+.navigator li {
+  padding: 10px;
+  margin: 10px;
+}
+.section {
+  padding: 50px 150px;
+}
+.table-section {
+  width: 80%;
+}
+.table {
+  border-spacing: 0 15px;
+  width: 100%;
+}
+.crypt {
+  color: #858585;
+}
+.cryp-name {
+  width: auto !important;
+}
+.negative {
+  color: #ff0000;
+}
+.positive {
+  color: #14ff00;
+}
+.cryp-name {
+  display: flex;
+  list-style: none;
+  width: 100px;
+  align-items: center;
+}
+.cryp-name li {
+  margin-right: 20px;
+}
+.cryp-name img {
+  border-radius: 50%;
+}
+.table th,
+td {
+  text-align: center;
+}
+th:nth-child(1) {
+  text-align: left;
+}
+.bar {
+  width: 25%;
+}
+.content {
+  margin: 10px;
+}
+.viewAll {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 28px 36px;
+  outline: none;
+  border: none;
+  background: rgb(61, 216, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 216, 238, 1) 35%,
+    rgba(9, 151, 232, 1) 100%
+  );
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.map-section {
+  background-color: #00092a;
+}
+.map-section {
+  display: flex;
+  padding: 52px 100px;
+}
+.map-area {
+  position: relative;
+}
+#wordmap {
+  width: 764.482px;
+  height: 547px;
+}
+#ellipse1 {
+  position: absolute;
+  left: 210px;
+  top: 60px;
+}
+
+#ellipse2 {
+  position: absolute;
+  left: 188px;
+  top: 108px;
+}
+#group {
+  position: absolute;
+  left: 62px;
+  top: -29px;
+}
+.content-area {
+  width: 464px;
+}
+.content-area h1,
+.content-area p {
+  padding: 25px;
+}
+
+.content-area h1 {
+  font-size: 36px;
+}
+
+.assets {
+  display: flex;
+  margin-bottom: 30px;
+}
+.assets img {
+  height: 80px;
+  width: 80px;
+}
+
+.assets-content h6 {
+  font-size: 18px;
+  padding: 0 25px;
+}
+.assets-content p {
+  padding: 10px 25px;
+}
+.reason-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.reason-child {
+  width: 50%;
+}
+.reason-section h1 {
+  font-size: 36px;
+}
+.reason-content {
+  margin: 20px 0px;
+  display: flex;
+}
+.check {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+.reason-section h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.waves_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.waves {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 583.5px;
+  justify-content: center;
+}
+#glass {
+  width: 365px;
+  height: 532px;
+  flex-shrink: 0;
+}
+#wave_1 {
+  z-index: -1;
+  position: absolute;
+  top: 107px;
+  right: 17px;
+}
+
+#wave_2 {
+  z-index: -1;
+  position: absolute;
+  top: 171px;
+  right: 16px;
+}
+#wave_3 {
+  z-index: -1;
+  position: absolute;
+  top: 252px;
+  right: 0px;
+}
+#wave_4 {
+  z-index: -1;
+  position: absolute;
+  top: 307px;
+  right: 17px;
+}
+#wave_5 {
+  z-index: -1;
+  position: absolute;
+  top: 389px;
+  right: 1px;
+}
+#portfolio {
+  left: 137px;
+  width: 50%;
+  position: relative;
+  top: 35px;
+  z-index: 2;
+}
+
+#footer {
+  background-color: #00092a;
+  display: flex;
+}
+.footer-chid {
+  width: 50%;
+}
+.footer-content {
+  display: flex;
+  gap: 20%;
+}
+.content ul {
+  list-style: none;
+}
+.content ul li {
+  padding: 5px 0;
+}
+.heading {
+  font-size: 24px;
+}
+#copyright {
+  text-align: center;
+  padding: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 20px 10px;
+  }
+  .logo {
+    width: 205px;
+    height: auto;
+  }
+  .section {
+    padding: 20px 50px;
+  }
+  /* .map-area {
+    width: 50%;
+  }
+  .content-area {
+    width: 50%;
+  }
+  .map-section {
+    padding: 15px 25px;
+  }
+  .reason-section {
+    gap: 0px;
+  }
+  #wordmap {
+    width: 100%;
+    height: auto;
+  } */
+  .map-section {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 20px;
+  }
+
+  #wordmap {
+    width: 100%;
+    height: auto;
+  }
+
+  .reason-section {
+    flex-direction: column;
+  }
+  .reason-content p {
+    padding: 0 10px;
+  }
+  .reason-section h1 {
+    font-size: 30px;
+  }
+  .reason-child {
+    width: 100%;
+  }
+  .footer-content {
+    justify-content: center;
+    display: flex;
+  }
+  .footer-para {
+    padding: 15px 0px;
+  }
+  .para {
+    padding: 10px 10px;
+  }
+
+  footer.section {
+    padding: 19px 25px;
+  }
+  #footer {
+    flex-direction: column;
+  }
+
+  .footer-chid {
+    width: 100%;
+  }
+  #footer-logo {
+    width: 20vh;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 20px 15px;
+  }
+  .nav {
+    /* display: none; */
+  }
+  body {
+    font-size: 16px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .footer-content {
+    gap: 5%;
+  }
+  table tr,
+  table th {
+    font-size: 8px;
+  }
+  .bar {
+    width: 45%;
+  }
+  .btn {
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  .cryp-name img {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .map-section {
+    padding: 10px;
+  }
+  #ellipse1 {
+    width: 165px;
+    left: 103px;
+    top: 19px;
+  }
+
+  #ellipse2 {
+    width: 165px;
+    left: 96px;
+    top: 20px;
+  }
+  #group {
+    width: 100%;
+    left: 15px;
+    top: -45px;
+  }
+  .content-area h1 {
+    font-size: 24px;
+  }
+  .content-area {
+    width: auto;
+  }
+  .content-area h1,
+  .content-area p {
+    padding: 10px 5px;
+  }
+  .assets-content h6 {
+    padding: 0 5px;
+  }
+  .reason-section h1 {
+    font-size: 24px;
+  }
+  .check {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+  .content ul li {
+    font-size: 10px;
+  }
+  .para {
+    padding: 10px 0px;
+  }
+  .reason-section h3,
+  .assets-content h6 {
+    font-size: 16px;
+  }
+  .reason-section h1,
+  .content-area h1 {
+    font-size: 18px;
+  }
+  .reason-section {
+    gap: 0px;
+  }
+
+  #footer-logo {
+    width: 8rem;
+    height: auto;
+  }
+}
