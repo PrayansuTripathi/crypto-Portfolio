@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav class="nav">
-        <ul class="nav-container">
-            <div>
-                <li> <img class="logo" src="images/Vector.png"></li>
-            </div>
-            <div class="navigator">
-                <li> Cryptocurrencies</li>
-                <li> Exchanges</li>
-                <li> Community</li>
-                <li> Trades</li>
-            </div>
 
-            <li><img src="images/search.png"></li>
+    <div class="topnav" id="myTopnav">
+        <div class="logo">
+            <img id="logo" src="images/logo.png">
+        </div>
+        <div>
+            <a></a>
+            <a href="#news">Cryptocurrencies</a>
+            <a href="#contact">Exchanges</a>
 
+            <a href="#about">Community</a>
+            <a href="#trade">Trades</a>
+        </div>
 
-        </ul>
-    </nav>
-
+        <img src="images/search.png" id="search">
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
     <section class="section section-header">
         <p class="content">Today's Cryptocurrency Prices By Market Cap</p>
         <p class="content">
@@ -199,10 +199,7 @@
     <section class="map-section">
 
         <div class="map-area">
-            <img id="wordmap" src="images/map/worlmap.png">
-            <img id="ellipse1" src="images/map/Ellipse_1.png">
-            <img id="ellipse2" src="images/map/Ellipse_2.png">
-            <img id="group" src="images/map/Group.png">
+            <img src="images/resons/map.png">
         </div>
         <div class="content-area">
             <h1>We are the most trusted Cryptocurrency Platform
@@ -278,23 +275,15 @@
             </div>
 
         </div>
-        <div class="waves_container">
-            <img id="glass" src="images/resons/glass.png">
-            <div class="waves">
-                <img id="wave_1" src="images/resons/wave_1.png">
-                <img id="wave_2" src="images/resons/wave_2.png">
-                <img id="wave_3" src="images/resons/wave_3.png">
-                <img id="wave_4" src="images/resons/wave_4.png">
-                <img id="wave_5" src="images/resons/wave_5.png">
-                <img id="portfolio" src="images/resons/portfolio.png">
-            </div>
+        <div class=" reason-child waves_container">
+            <img src="images/resons/reasons.png">
 
         </div>
 
     </section>
     <footer id="footer" class="section">
         <div class="footer-chid footer-para">
-            <img id="footer-logo" src="images/Vector.png">
+            <img id="footer-logo" src="images/logo.png">
             <p class="para">
                 CoinIntention's mission is to make investing in cryptocurrencies easy and efficient. CoinIntention
                 tracks various data of cryptocurrencies and thus offers its users an overview of all cryptocurrencies
@@ -347,6 +336,18 @@
 
     </footer>
     <p id="copyright">© 2021-2023 CoinIntention. All rights reserved.</p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

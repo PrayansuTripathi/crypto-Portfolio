@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Poppins"; */
 }
 body {
   font-family: pxoppins;
@@ -12,35 +11,59 @@ body {
 p {
   font-size: 16px;
 }
-
-.nav {
-  background-color: #0a1939;
-  padding: 13px 88px 13.7px 87px;
-}
-.nav-container,
-.nav-container div {
-  align-items: center;
+.topnav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  /* background-color: #333; */
+  background-color: #0a1939;
+  padding: 0 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  float: left;
+  padding: 10px;
+  height: 20px;
   width: auto;
 }
-.nav-container li {
-  list-style: none;
+#search {
+  padding: 0 10px;
 }
-.logo {
-  width: 285px;
-  height: 33.63px;
-}
-.navigator li {
-  padding: 10px;
-  margin: 10px;
+.none {
+  display: none;
 }
 .section {
   padding: 50px 150px;
 }
-.table-section {
-  width: 80%;
-}
+
 .table {
   border-spacing: 0 15px;
   width: 100%;
@@ -82,6 +105,9 @@ th:nth-child(1) {
 .content {
   margin: 10px;
 }
+.waves_container img {
+  width: 80%;
+}
 .viewAll {
   display: flex;
   justify-content: center;
@@ -103,34 +129,13 @@ th:nth-child(1) {
 }
 
 .map-section {
-  background-color: #00092a;
-}
-.map-section {
   display: flex;
   padding: 52px 100px;
-}
-.map-area {
-  position: relative;
-}
-#wordmap {
-  width: 764.482px;
-  height: 547px;
-}
-#ellipse1 {
-  position: absolute;
-  left: 210px;
-  top: 60px;
+  justify-content: space-evenly;
 }
 
-#ellipse2 {
-  position: absolute;
-  left: 188px;
-  top: 108px;
-}
-#group {
-  position: absolute;
-  left: 62px;
-  top: -29px;
+.map-area img {
+  width: 100%;
 }
 .content-area {
   width: 464px;
@@ -184,61 +189,6 @@ th:nth-child(1) {
   font-size: 20px;
   padding-bottom: 10px;
 }
-.waves_container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.waves {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 583.5px;
-  justify-content: center;
-}
-#glass {
-  width: 365px;
-  height: 532px;
-  flex-shrink: 0;
-}
-#wave_1 {
-  z-index: -1;
-  position: absolute;
-  top: 107px;
-  right: 17px;
-}
-
-#wave_2 {
-  z-index: -1;
-  position: absolute;
-  top: 171px;
-  right: 16px;
-}
-#wave_3 {
-  z-index: -1;
-  position: absolute;
-  top: 252px;
-  right: 0px;
-}
-#wave_4 {
-  z-index: -1;
-  position: absolute;
-  top: 307px;
-  right: 17px;
-}
-#wave_5 {
-  z-index: -1;
-  position: absolute;
-  top: 389px;
-  right: 1px;
-}
-#portfolio {
-  left: 137px;
-  width: 50%;
-  position: relative;
-  top: 35px;
-  z-index: 2;
-}
 
 #footer {
   background-color: #00092a;
@@ -265,32 +215,16 @@ th:nth-child(1) {
   padding: 20px;
 }
 @media only screen and (max-width: 1024px) {
-  .nav {
-    padding: 20px 10px;
-  }
   .logo {
-    width: 205px;
+    width: 100px;
     height: auto;
+    height: 20px;
+    width: auto;
   }
   .section {
     padding: 20px 50px;
   }
-  /* .map-area {
-    width: 50%;
-  }
-  .content-area {
-    width: 50%;
-  }
-  .map-section {
-    padding: 15px 25px;
-  }
-  .reason-section {
-    gap: 0px;
-  }
-  #wordmap {
-    width: 100%;
-    height: auto;
-  } */
+
   .map-section {
     flex-direction: column;
   }
@@ -302,7 +236,9 @@ th:nth-child(1) {
     width: 100%;
     height: auto;
   }
-
+  .content-area {
+    width: auto;
+  }
   .reason-section {
     flex-direction: column;
   }
@@ -314,6 +250,14 @@ th:nth-child(1) {
   }
   .reason-child {
     width: 100%;
+  }
+  .waves_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .waves_container img {
+    width: 80%;
   }
   .footer-content {
     justify-content: center;
@@ -343,12 +287,50 @@ th:nth-child(1) {
 }
 
 @media only screen and (max-width: 767px) {
+  .topnav {
+    padding: 0;
+  }
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive {
+    float: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive {
+    display: block;
+    /* width: 100%; */
+    text-align: left;
+  }
   .section {
     padding: 20px 15px;
   }
-  .nav {
-    /* display: none; */
-  }
+
   body {
     font-size: 16px;
   }
@@ -358,6 +340,7 @@ th:nth-child(1) {
   .footer-content {
     gap: 5%;
   }
+
   table tr,
   table th {
     font-size: 8px;
@@ -378,22 +361,7 @@ th:nth-child(1) {
   .map-section {
     padding: 10px;
   }
-  #ellipse1 {
-    width: 165px;
-    left: 103px;
-    top: 19px;
-  }
 
-  #ellipse2 {
-    width: 165px;
-    left: 96px;
-    top: 20px;
-  }
-  #group {
-    width: 100%;
-    left: 15px;
-    top: -45px;
-  }
   .content-area h1 {
     font-size: 24px;
   }
